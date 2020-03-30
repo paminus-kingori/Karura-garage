@@ -1,0 +1,218 @@
+body{
+    /* background:linear-gradient(rgb(211, 208, 208),rgb(88, 88, 88),rgb(53, 52, 52)); */
+    background-color: rgba(206, 199, 199, 0.91);
+    margin: 0;
+}
+header{
+    display:inline-flex;
+    width:100%;
+    position: relative;
+    height: 200px;
+}
+nav{
+    top: 0;
+    right:0;
+    margin-top: 150px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    position: absolute;
+}
+
+.links a button{
+    background-color:rgb(49, 11, 155);
+    border-style: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    transition-duration: 3s;
+    box-shadow: 0px 4px 9px 1px rgba(8, 8, 8, 0.697);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+    margin-left: 13px;
+}
+@keyframes hoverAct{
+0%{
+border-style:solid;
+border-top:2px black;
+}
+35%{
+    border-style:solid;
+    border-right: 2px black;
+}
+70%{
+    border-style:solid;
+    border-bottom:2px black;
+}
+100%{
+    border-style:solid;
+    border-left:2px black
+}
+}
+.links a button:hover{
+    /* animation: hoverAct linear 0.2s 5 forwards; */
+    text-transform: uppercase;
+    transition-duration: 2s;
+    background-color: rgb(81, 160, 197);
+}
+/* .links alink {
+    background-color: red; - Do research!!
+} */
+.landing{
+    width: 100%! important;
+    height: 70vh;
+    background-image: url("c-v\ joint.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 5px; */
+    position: relative;
+    /* display: inline-table; */
+    text-align: center;
+    
+}
+
+p.welcome{
+    color: rgb(235, 232, 232);
+    /* text-shadow: rgb(250, 248, 248); */
+    font-size: 4em;
+    font-weight: 500;
+    font-family: florence,cursive,fantasy;
+    text-align: center;
+    /* vertical-align: text-top; */
+    /* display: table-cell; */
+    background-color: #1414157e;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: absolute;
+margin: 0;
+z-index: 0;
+}
+
+.images{
+    display: inline-flex;
+    margin-top: 13%;
+    z-index: 1;
+}
+.landing .images .pic a img{
+    width: 270px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 6px .6px rgb(143, 136, 136);
+    opacity: 1;
+    transition-duration: .6s;
+}
+.pic{
+    margin-right: 15px;
+    margin-left: 15px;
+    z-index: 1;
+    max-width: 300px;
+    /* position: relative; */
+}
+.img_text{
+    color: rgb(233, 252, 70);
+    font-family: cursive,'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.images .pic a img:hover{
+    width:280px;
+    height:207px;
+}
+/* service file */
+.container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    margin-top: 10px;
+    background-image: url(gear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    width:100%;
+    /* text-align: center; */
+margin-bottom: 0;
+}
+.container .box{
+/* border-style: ridge;
+border-color: rgb(20, 20, 19); */
+background-color: rgba(121, 127, 128, 0.85);
+box-shadow: 1px 4px 7px 2px rgb(7, 7, 7);
+text-align: center;
+margin-left: 25px;
+margin-bottom: 50px;
+height: 350px;
+width: 330px;
+border-radius: 15px;
+padding-top: 10px;
+padding-left:14px;
+padding-bottom: 0;
+color: rgb(8, 6, 0);
+}
+.box img{
+    width:60px;
+    height: 55px;
+    /* margin-bottom: 0px; */
+}
+.box #c_text,ul{
+    text-align: left;
+    font-family: Ubuntu,-apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 1.06em;
+     list-style-image: url(svgFiles/spanner.svg);
+     
+
+}
+.box a{
+    position: relative;
+    bottom:0;
+    margin-bottom: 0px;
+}
+.box a button{
+    background-color:rgb(2, 92, 45);
+    padding:5px 10px;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: monospace, sans-serif,'Times New Roman', Times, serif;
+    font-weight: 500;
+    
+    /* margin-bottom: 20px; */
+}
+footer .booking p{
+    text-align:center;
+    word-spacing: 2px;
+    font-size: 1.4em;
+    margin-top: 40px;
+    font-weight: 600;
+    font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer .booking #submit input{
+    background:rgb(97, 90, 90);
+    font-size: .9em;
+}
+
+/* team file */
+.team_container{
+    display: block;
+}
+
+.team_member img{
+    position: relative;
+    width:300px;
+    height:400px;
+    float: left;
+    margin-bottom: 10px;
+
+}
+.team_member p{
+    display: table-cell;
+    vertical-align: text-top;
+}
