@@ -1,0 +1,374 @@
+body{
+    /* background:linear-gradient(rgb(211, 208, 208),rgb(88, 88, 88),rgb(53, 52, 52)); */
+    background-color: rgb(190, 190, 192);
+    margin: 0;
+}
+header{
+    display:inline-flex;
+    width:100%;
+    position: relative;
+    height: 200px;
+    max-height: max-content;
+}
+nav{
+    top: 0;
+    right:0;
+    margin-top: 150px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    position: absolute;
+}
+
+.links a button{
+    background-color:rgb(49, 11, 155);
+    border-style: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    transition-duration: 3s;
+    box-shadow: 0px 4px 9px 1px rgba(8, 8, 8, 0.697);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+    margin-left: 13px;
+}
+@keyframes hoverAct{
+0%{
+border-style:solid;
+border-top:2px black;
+}
+35%{
+    border-style:solid;
+    border-right: 2px black;
+}
+70%{
+    border-style:solid;
+    border-bottom:2px black;
+}
+100%{
+    border-style:solid;
+    border-left:2px black
+}
+}
+/* .links a button:visited{
+background-color: tomato;
+} */
+.links a button:hover{
+    /* animation: hoverAct linear 0.2s 5 forwards; */
+    text-transform: uppercase;
+    transition-duration: 2s;
+    background-color: rgb(81, 160, 197);
+}
+/* .links a button:active{
+    background-color: pink;
+} */
+/* .links alink {
+    background-color: red; - Do research!!
+} */
+.landing{
+    width: 100%! important;
+    height: 70vh;
+    background-image: url("c-v\ joint.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 5px; */
+    position: relative;
+    /* display: inline-table; */
+    text-align: center;
+    
+}
+
+p.welcome{
+    color: rgb(235, 232, 232);
+    /* text-shadow: rgb(250, 248, 248); */
+    font-size: 4em;
+    font-weight: 500;
+    font-family: florence,cursive,fantasy;
+    text-align: center;
+    /* vertical-align: text-top; */
+    /* display: table-cell; */
+    background-color: #1414157e;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: absolute;
+margin: 0;
+z-index: 0;
+}
+
+.images{
+    display: inline-flex;
+    margin-top: 13%;
+    z-index: 1;
+}
+.landing .images .pic a img{
+    width: 270px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px .7px rgb(151, 147, 147);
+    opacity: 1;
+    transition-duration: .6s;
+}
+.pic{
+    margin-right: 15px;
+    margin-left: 15px;
+    z-index: 1;
+    max-width: 300px;
+    /* position: relative; */
+}
+.img_text{
+    color: rgb(233, 252, 70);
+    font-family: cursive,'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+text-shadow: 1px 2px 3px black;
+}
+.pic a{
+    text-decoration: none;
+}
+.images .pic:hover{
+    /* width:280px;
+    height:207px; */
+    transform:translate(0px,-13px);
+}
+
+
+
+/* service file */
+.hide{
+    opacity:0;
+    transition: .6s;
+}
+.container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    margin-top: 10px;
+    background-image: url(gear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    width:100%;
+    /* text-align: center; */
+margin-bottom: 0;
+}
+.container .box{
+/* border-style: ridge;
+border-color: rgb(20, 20, 19); */
+background-color: rgba(121, 127, 128, 0.85);
+box-shadow: 1px 4px 7px 2px rgb(7, 7, 7);
+text-align: center;
+margin-left: 25px;
+margin-bottom: 50px;
+height: 350px;
+width: 330px;
+border-radius: 15px;
+padding-top: 10px;
+padding-left:14px;
+padding-bottom: 0;
+color: rgb(8, 6, 0);
+}
+.box img{
+    width:60px;
+    height: 55px;
+    /* margin-bottom: 0px; */
+}
+.box #c_text,ul{
+    text-align: left;
+    font-family: Ubuntu,-apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 1.06em;
+     list-style-image: url(svgFiles/spanner.svg);
+     list-style-type: circle;
+     
+
+}
+.box a{
+    position: relative;
+    bottom:0;
+    margin-bottom: 0px;
+}
+.box a button{
+    background-color:rgb(2, 92, 45);
+    padding:5px 10px;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: monospace, sans-serif,'Times New Roman', Times, serif;
+    font-weight: 500;
+    cursor: pointer;
+    
+    /* margin-bottom: 20px; */
+}
+footer .booking p{
+    text-align:center;
+    word-spacing: 2px;
+    font-size: 1.4em;
+    margin-top: 40px;
+    font-weight: 500;
+    font-family: Georgia,monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    text-shadow: 1px 2px 4px black;
+    letter-spacing: 1px;
+}
+footer .booking #submit input{
+    background:rgb(97, 90, 90);
+    font-size: .9em;
+    border-radius: 5px;
+    padding: 4px;
+    font-family: Georgia,'Courier New', Courier, monospace;
+    /* font-weight: 550; */
+}
+
+footer{
+    width:100%;
+    height: 300px;
+    background-image: url("WhatsApp lite.jpeg");
+    background-position: bottom;
+    background-color: rgb(2, 75, 36);
+    margin:0;
+    padding-top: 20px;
+    clear: both;
+}
+
+/* Contact file */
+.contact_container{
+    margin: auto;
+    text-align: center;
+    height:450px;
+    width:390px;
+    background-image: url(wrenchSimpler.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 2px 3px 8px 2px black;
+    position: relative;
+}
+.contact_container .overlay{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.318);
+    border-radius: inherit;
+    z-index: 1;
+}
+.contact_container .content{
+    position: relative;
+    z-index: 2;
+}
+.content .write,.email,.name,.message{
+    margin-top: 20px;
+}
+.content .write{
+    /* width:50px; */
+    /* text-align: center; */
+    /* background-clip: content-box;
+    background-color: rgba(29, 83, 233, 0.774); */
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    font-size: 1.4em;
+    padding: 30px 50px 30px 50px;
+    color: rgb(12, 12, 12);
+    font-family: cursive;
+
+    background: linear-gradient(45deg, #cde44cd2, #2cf02ce0);
+    border-radius: inherit;
+    background-clip: content-box;
+}
+.content .buttons{
+    margin-top: 30px;
+
+
+}
+.buttons button{
+    border: none;
+    width: 70px;
+    height: 26px;
+    border-radius: 7px;
+    /* font: 1em Ubuntu,calibri,sans-serif; */
+    font-size: 1em;
+    font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+.content .buttons button:first-child{
+    margin-right: 22px;
+    background-color: rgb(10, 206, 10);
+    color: white;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0);
+
+}
+.content .buttons button:last-child{
+    text-shadow: 0px 3px 3px rgba(0, 0, 0);
+    background-color: rgb(247, 51, 51);
+    color:black;
+}
+.content{
+    font-family:  Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,cursive;
+}
+
+/* team file */
+
+.team_container{
+    /* background-color:rgb(150, 150, 151); */
+    font-size: 1.4em;
+    background-size: cover;
+    /* margin-bottom:90px; */
+
+}
+.meet{
+    text-align: center;
+    font-size: 49px;
+    margin-bottom: 20px;
+    text-decoration: underline rgb(66, 66, 73);
+    
+}
+.team_container .team_member .icon{
+    /* place-items: center;
+    place-content: center;
+    place-self: center;  dnt work */
+    text-align: center;
+    clear: both;
+}
+.team_container .team_member .icon img{
+    width:160px;
+    height:160px;
+    border-radius: 90px;
+    box-shadow: 0px 0px 4px 4px rgba(36, 34, 34, 0.936);
+    /* border: groove 2px rgb(99, 97, 97); */
+}
+.team_member .mech_name,.job_position{
+    text-align: right;
+}
+.team_member .mech_name{
+float: right;
+margin-bottom: 25px;
+margin-right: 20px;
+}
+.mech_name .name_job{
+    width:fit-content;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.quote{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    line-height: normal;
+}
+.quote::first-letter{
+    margin-left: 60px;
+}

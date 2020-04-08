@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>
+            Karura Garage | Landing page
+        </title>
+        <!-- <link rel="stylesheet" href="karura.css"> -->
+        <style>
+            body{
+                background-image: url(porsche.jpg);
+                width:100%;
+                background-size: cover;
+                background-position: left;
+                margin:0;
+                display:inline-table;
+                height: 100vh;
+            }
+            .landing_overlay{
+                position: absolute;
+                right:0;
+                top:0;
+                bottom:0;
+                left:0;
+                /* background: linear-gradient(135deg,  transparent,rgba(82, 82, 81, 0.568),rgba(31, 30, 30, 0.726)); */
+                background-color: rgba(8, 8, 8, 0.455);
+                z-index: 0;
+
+            }
+            .welcoming{
+                position: relative;
+                font-size: 3.3em;
+                color: white;
+                z-index: 1;
+                text-align: center;
+                width: 100%;
+                margin-top: 25px;
+                text-shadow: 1px 2px 4px rgb(10, 10, 10);
+                background: linear-gradient(200deg, rgba(0,0,0,0.76), transparent);
+                
+            }
+            .more{
+                margin-top: 20px;
+                position: absolute;
+                font-size: 2.4em;
+                color: white;
+                z-index: 1;
+                width:40%;
+                margin-left:20px;
+                top:28%;
+                text-indent: 45pt;
+                text-align: left;
+                text-shadow: 1px 2px 4px rgb(10, 10, 10);
+                font-weight: 500;
+                /* bottom:50%; */
+                
+            }
+            .tour{
+                font-size: 2em;
+                position: absolute;
+                bottom:22%;
+                width:fit-content;
+                height: fit-content;
+                background-image: url("WhatsApp lite.jpeg");
+                background-size: cover;
+                background-position: bottom;
+                background-color: rgb(9, 12, 163);
+                /* background: linear-gradient(200deg,#e97a12,rgb(240, 133, 71)); */
+               margin-left: 45pt;
+                padding:7px;
+                border-style: inset;
+                border-width: 4px;
+                border-color: rgb(255, 255, 255);
+                /* border-radius: 29px; */
+            }
+            a .tour{
+                text-decoration: none;
+                color: rgb(170, 169, 169);
+                text-shadow: 2px 2px 3px black;
+                transition: ease 1s;
+            }
+            a .tour:active{
+                background-color: greenyellow;
+
+            }
+            a .tour:hover{
+                transform: scale(1.1);
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- <img src="karura cropped.png" style="width:330px; height:180px; float: left;"> -->
+        <div class="landing_overlay"></div>
+        <div class="welcoming">
+            Karibu Karura Garage
+        </div>
+        <div class="more">
+           Karura Garage is a state of the art garage located at the heart of Nyeri town. Our core goal is to ensure safety and comfort in motion.
+        </div>
+        <a href="index.html"><div class="tour">
+            Take a tour
+            </div>
+            </a>
+    </body>
+</html>

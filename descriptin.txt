@@ -1,0 +1,35 @@
+Car services offered:
+	i) General service - oil n filter change
+		- brake system diagnosis and maintenance
+	ii) Computerised car diagnosis
+	iii) Engine problems e.g excessive fuel consumption
+			overheating,loss of power, strange smoke
+	iv) Suspension system
+	v) Steering system
+	vi) Transmission system
+	vii) Car lock $ alarm system
+	viii) Differential system
+	ix) car Wiring system
+	 
+
+
+The Team
+- Design team page.
+- Begin with five,,Njoks, the garage chairwoman
+		pami - engine and computer diagnosis expert
+		bigman - suspension and differential expert
+		eric - wiring $ car lock sys expert
+		Elijah - transmission $ steering sys expert + garage driver
+
+Contact us
+- Location - Nyeri, behind national library
+- Phone no.  0723805386 - chairlady
+		0712128920 - senior mechanic
+- P.o Box - 2482 Nyeri
+- photos of the garage,,the library, the itaara
+- google map direction - learn how to insert it
+
+icons still needed:
+5. go up
+font awesome stuff - add good fonts
+spacing btwn cntact stuff in cntact.html 
