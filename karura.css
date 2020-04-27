@@ -10,6 +10,10 @@ header{
     height: 200px;
     max-height: max-content;
 }
+header img{
+    width: 330px;
+    height:180px;
+}
 nav{
     top: 0;
     right:0;
@@ -79,7 +83,7 @@ background-color: tomato;
     
 }
 
-p.welcome{
+.welcome{
     color: rgb(235, 232, 232);
     /* text-shadow: rgb(250, 248, 248); */
     font-size: 4em;
@@ -139,6 +143,7 @@ text-shadow: 1px 2px 3px black;
 
 
 
+
 /* service file */
 .hide{
     opacity:0;
@@ -152,6 +157,7 @@ text-shadow: 1px 2px 3px black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding-top: 40px;
     width:100%;
     /* text-align: center; */
@@ -240,10 +246,10 @@ footer{
 
 /* Contact file */
 .contact_container{
-    margin: auto;
     text-align: center;
-    height:450px;
-    width:390px;
+    width: max-content;
+    height: max-content;
+    padding:19px 15px;
     background-image: url(wrenchSimpler.jpg);
     background-size: cover;
     border-radius: 15px;
@@ -372,3 +378,55 @@ margin-right: 20px;
 .quote::first-letter{
     margin-left: 60px;
 }
+@media only screen and (max-width:550px){
+    *{
+        font-size: 14px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-content: center;
+
+    }
+    .container .box{
+height: max-content;
+width: 250px;
+border-radius: 5px;
+padding-top: 10px;
+padding-left:8px;
+padding-bottom: 5px;
+    }
+    header{
+        display: block;
+    }
+    header img{
+      width:100%;
+      height:150px;  
+    }
+    nav{
+        width:100%;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom:5px;
+        position:relative;
+        text-align: center;
+
+    }
+    .links a button{
+        font-size: 0.9em;
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+    .links a button:hover{
+    /* animation: hoverAct linear 0.2s 5 forwards; */
+    background-color: rgb(81, 160, 197);
+    text-transform: none;
+}
+}
+.main-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <head>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>
 Karura Garage | Home
     </title>
     <link rel="stylesheet" href="karura.css">
+    <style>
+
+@media only screen and (max-width:500px){
+    header{
+        display: block;
+    }
+    header img{
+      width:100%;
+      height:150px;  
+    }
+    nav{
+        width:100%;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom:5px;
+        position:relative;
+        text-align: center;
+
+    }
+    .links a button{
+        font-size: 0.9em;
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+    .links a button:hover{
+    /* animation: hoverAct linear 0.2s 5 forwards; */
+    background-color: rgb(81, 160, 197);
+    text-transform: none;
+}
+    .landing{
+        width: 100%! important;
+        height:280px;
+        background-image: none;
+    }
+    .landing .welcome{
+        display: inline-table;
+        font-size: 2em;
+        position: relative;
+        height: 250px;
+        background-image: url("c-v\ joint.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .landing .welcome p{
+        display: table-cell;
+        font-size: 1em;
+        color:white;
+        margin:0;
+        vertical-align: middle;
+    }
+    .images{
+        margin-top: 0;
+        padding-top: 35px;
+        background: #030731;
+        display: block;
+        position: relative;
+    }
+    .landing .images .pic a img{
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px .7px rgb(151, 147, 147);
+    opacity: 1;
+    transition-duration: .6s;
+}
+.pic{
+   text-align: center;   
+   margin: auto;
+    z-index: 1;
+    max-width: 300px;
+    padding-bottom: 25px;
+}
+.img_text{
+    font-size: 1em;
+}
+
+}
+
+    </style>
+
     </head>
     <body>
      <header>
-            <img src="karura cropped.png" style="width: 330px; height: 180px;">
+            <img src="karura cropped.png">
         <nav>
             <div class="links">
                 <a href="services.html"><button> Car Services </button></a>
@@ -21,7 +102,7 @@ Karura Garage | Home
             </header>
     <div class="landing">
         
-        <p class="welcome">Welcome to Karura Garage</p>
+        <div class="welcome"><p>Welcome to Karura Garage</p></div>
         <div class="images">
             <div class="pic">
                 <a href="services.html"><img src="brakePads1.jpg" alt="brake pads">

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
         <title>
             Karura Garage | Car services
         </title>
         <link rel="stylesheet" type="text/css" href="karura.css">
+        
         <style>
 footer{
     width:100%;
@@ -20,10 +23,12 @@ footer h2{
     text-align: center;
 }
         </style>
+        
     </head>
     <body>
+        
         <header>
-         <img src="karura cropped.png" style="width: 330px; height: 180px;" id="upPart">
+         <img src="karura cropped.png" id="upPart">
         <nav>
             <div class="links">
                 <a href="index.html"><button>Home</button></a>
@@ -183,12 +188,25 @@ footer h2{
             "> Book a service</h2>
             <div class="booking">
                <p class="booking_text"> 
-                   Category    <input type="text" placeholder="Choose a type of service"> 
+                   Category   
+                    <!-- <input type="text" placeholder="Choose a type of service">  -->
+                   <select>
+                       <option value="">General service</option>
+                       <option value="">Break System</option>
+                       <option value="">Computer diagnosis</option>
+                       <option value="">Engine repair</option>
+                       <option value="">Suspension System</option>
+                       <option value="">Steering system</option>
+                       <option value="">Transimission system</option>
+                       <option value="">Differential System</option>
+                       <option value="">Car wiring</option>
+
+                   </select>
                 <!-- research on how to display choices -->
-                Phone number <input type="tel" 
+                Phone number <input type="tel" required
                  placeholder="Enter phone number..">
-                Email <input type="text" placeholder="Enter email address..">
-                Date <input type="datetime" placeholder="Book date for service..">
+                Email <input type="email" autocomplete="on" required placeholder="Enter email address..">
+                Date <input type="date" placeholder="Book date for service..">
            </p>
            <p id="submit">
                <input type="submit">
@@ -196,18 +214,18 @@ footer h2{
             </div>
         </footer>
 
-    
-    <script>
-        var up=document.getElementById('up');
-        window.onscroll=function(){
-        var scrollPos=window.pageYOffset;
-        if(scrollPos<100){
-            up.classList.add('hide');
-        }
-        else{
-            up.classList.remove('hide');
-        }
-        }
-    </script>
+        <script>
+            var up=document.getElementById('up');
+            window.onscroll=function(){
+            var scrollPos=window.pageYOffset;
+            if(scrollPos<100){
+                up.classList.add('hide');
+            }
+            else{
+                up.classList.remove('hide');
+            }
+            }
+        </script>
+   
     </body>
 </html>
