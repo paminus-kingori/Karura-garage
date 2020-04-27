@@ -10,6 +10,10 @@ header{
     height: 200px;
     max-height: max-content;
 }
+header img{
+    width: 330px;
+    height:180px;
+}
 nav{
     top: 0;
     right:0;
@@ -24,7 +28,7 @@ nav{
     border-style: none;
     font-size: 1.1em;
     border-radius: 6px;
-    transition-duration: 3s;
+    transition-duration: 1s;
     box-shadow: 0px 4px 9px 1px rgba(8, 8, 8, 0.697);
     padding: 10px 15px;
     text-decoration: none;
@@ -55,8 +59,6 @@ background-color: tomato;
 } */
 .links a button:hover{
     /* animation: hoverAct linear 0.2s 5 forwards; */
-    text-transform: uppercase;
-    transition-duration: 2s;
     background-color: rgb(81, 160, 197);
 }
 /* .links a button:active{
@@ -79,7 +81,7 @@ background-color: tomato;
     
 }
 
-p.welcome{
+.welcome{
     color: rgb(235, 232, 232);
     /* text-shadow: rgb(250, 248, 248); */
     font-size: 4em;
@@ -139,11 +141,18 @@ text-shadow: 1px 2px 3px black;
 
 
 
+
 /* service file */
 .hide{
     opacity:0;
+    display: none;
     transition: .6s;
 }
+.show{
+    opacity:1;
+    transition: 0.6s;
+}
+
 .container{
     display: grid;
     grid-template-columns:auto auto auto;
@@ -152,6 +161,7 @@ text-shadow: 1px 2px 3px black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding-top: 40px;
     width:100%;
     /* text-align: center; */
@@ -240,10 +250,10 @@ footer{
 
 /* Contact file */
 .contact_container{
-    margin: auto;
     text-align: center;
-    height:450px;
-    width:390px;
+    width: max-content;
+    height: max-content;
+    padding:19px 15px;
     background-image: url(wrenchSimpler.jpg);
     background-size: cover;
     border-radius: 15px;
@@ -318,10 +328,11 @@ footer{
 /* team file */
 
 .team_container{
-    /* background-color:rgb(150, 150, 151); */
-    font-size: 1.4em;
+    font-size: 1.5em;
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.877),rgba(0, 0, 0, 0.295)),url("bulbs.jpg") center fixed;
     background-size: cover;
-    /* margin-bottom:90px; */
+    color: #fff;    
+    text-shadow: 1px 1px 5px black;
 
 }
 .meet{
@@ -332,11 +343,8 @@ footer{
     
 }
 .team_container .team_member .icon{
-    /* place-items: center;
-    place-content: center;
-    place-self: center;  dnt work */
+   
     text-align: center;
-    clear: both;
 }
 .team_container .team_member .icon img{
     width:160px;
@@ -348,10 +356,16 @@ footer{
 .team_member .mech_name,.job_position{
     text-align: right;
 }
+.team_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .team_member .mech_name{
-float: right;
 margin-bottom: 25px;
 margin-right: 20px;
+align-self: flex-end;
 }
 .mech_name .name_job{
     width:fit-content;
@@ -372,3 +386,55 @@ margin-right: 20px;
 .quote::first-letter{
     margin-left: 60px;
 }
+@media only screen and (max-width:550px){
+    *{
+        font-size: 16px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-content: center;
+
+    }
+    .container .box{
+height: max-content;
+width: 250px;
+border-radius: 5px;
+padding-top: 10px;
+padding-left:8px;
+padding-bottom: 5px;
+    }
+    header{
+        display: block;
+    }
+    header img{
+      width:100%;
+      height:150px;  
+    }
+    nav{
+        width:100%;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom:5px;
+        position:relative;
+        text-align: center;
+
+    }
+    .links a button{
+        font-size: 0.9em;
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+    .links a button:hover{
+    /* animation: hoverAct linear 0.2s 5 forwards; */
+    background-color: rgb(81, 160, 197);
+    text-transform: none;
+}
+}
+.main-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
