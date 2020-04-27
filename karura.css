@@ -28,7 +28,7 @@ nav{
     border-style: none;
     font-size: 1.1em;
     border-radius: 6px;
-    transition-duration: 3s;
+    transition-duration: 1s;
     box-shadow: 0px 4px 9px 1px rgba(8, 8, 8, 0.697);
     padding: 10px 15px;
     text-decoration: none;
@@ -59,8 +59,6 @@ background-color: tomato;
 } */
 .links a button:hover{
     /* animation: hoverAct linear 0.2s 5 forwards; */
-    text-transform: uppercase;
-    transition-duration: 2s;
     background-color: rgb(81, 160, 197);
 }
 /* .links a button:active{
@@ -147,8 +145,14 @@ text-shadow: 1px 2px 3px black;
 /* service file */
 .hide{
     opacity:0;
+    display: none;
     transition: .6s;
 }
+.show{
+    opacity:1;
+    transition: 0.6s;
+}
+
 .container{
     display: grid;
     grid-template-columns:auto auto auto;
@@ -324,10 +328,11 @@ footer{
 /* team file */
 
 .team_container{
-    /* background-color:rgb(150, 150, 151); */
-    font-size: 1.4em;
+    font-size: 1.5em;
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.877),rgba(0, 0, 0, 0.295)),url("bulbs.jpg") center fixed;
     background-size: cover;
-    /* margin-bottom:90px; */
+    color: #fff;    
+    text-shadow: 1px 1px 5px black;
 
 }
 .meet{
@@ -338,11 +343,8 @@ footer{
     
 }
 .team_container .team_member .icon{
-    /* place-items: center;
-    place-content: center;
-    place-self: center;  dnt work */
+   
     text-align: center;
-    clear: both;
 }
 .team_container .team_member .icon img{
     width:160px;
@@ -354,10 +356,16 @@ footer{
 .team_member .mech_name,.job_position{
     text-align: right;
 }
+.team_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .team_member .mech_name{
-float: right;
 margin-bottom: 25px;
 margin-right: 20px;
+align-self: flex-end;
 }
 .mech_name .name_job{
     width:fit-content;
@@ -380,7 +388,7 @@ margin-right: 20px;
 }
 @media only screen and (max-width:550px){
     *{
-        font-size: 14px;
+        font-size: 16px;
     }
     .container{
         display: grid;
