@@ -1,135 +1,214 @@
-<!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>
-Karura Garage | Home
-    </title>
-    <link rel="stylesheet" href="karura.css">
-    <style>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-@media only screen and (max-width:500px){
-    header{
-        display: block;
-    }
-    header img{
-      width:100%;
-      height:150px;  
-    }
-    nav{
-        width:100%;
-        margin-top: 5px;
-        margin-right: 5px;
-        margin-bottom:5px;
-        position:relative;
-        text-align: center;
+        <title>
+            Karura Garage | Landing page
+        </title>
+        <!-- <link rel="stylesheet" href="karura.css"> -->
+        <style>
+           
+            body{
+                background-color: rgba(8, 8, 8, 0.76);
 
-    }
-    .links a button{
-        font-size: 0.9em;
-        padding: 5px 8px;
-        margin-left: 5px;
-    }
-    .links a button:hover{
-    /* animation: hoverAct linear 0.2s 5 forwards; */
-    background-color: rgb(81, 160, 197);
-    text-transform: none;
-}
-    .landing{
-        width: 100%! important;
-        height:280px;
-        background-image: none;
-    }
-    .landing .welcome{
-        display: inline-table;
-        font-size: 2em;
-        position: relative;
-        height: 250px;
-        background-image: url("c-v\ joint.jpg");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .landing .welcome p{
-        display: table-cell;
-        font-size: 1em;
-        color:white;
-        margin:0;
-        vertical-align: middle;
-    }
-    .images{
-        margin-top: 0;
-        padding-top: 35px;
-        background: #030731;
-        display: block;
-        position: relative;
-    }
-    .landing .images .pic a img{
-    width: 250px;
-    height: 150px;
-    border-radius: 12px;
-    box-shadow: 1px 1px 5px .7px rgb(151, 147, 147);
-    opacity: 1;
-    transition-duration: .6s;
-}
-.pic{
-   text-align: center;   
-   margin: auto;
-    z-index: 1;
-    max-width: 300px;
-    padding-bottom: 25px;
-}
-.img_text{
-    font-size: 1em;
-}
+                display: grid;
+                align-content: space-between;
+                margin:0;           
+             
+                position: relative;
+            }
+            body::before{
+                background:  linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)), url('porsche.jpg');
+                content: "";
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left:0;
+                right: 0;
+                z-index: -1;
+                opacity:0;
+                background-size: cover;
+                background-position: left;
+                animation: fade-slide 1.4s .1s ease forwards;
+                background-repeat: no-repeat;
+                
+                /* cubic-bezier(.2,.1, 0,1) */
+            }
+            @keyframes fade-slide {
+                0%{
+                    opacity:0;
+                    transform: translateY(-4rem);
+                }
+                100%{
+                    opacity: 1;
+                    transform: none;
+                }
+                
+            }
+            /* .landing_overlay{
+                position: absolute;
+                right:0;
+                top:0;
+                bottom:0;
+                left:0;
+                background: linear-gradient(135deg,  transparent,rgba(82, 82, 81, 0.568),rgba(31, 30, 30, 0.726));
+                background-color: rgba(8, 8, 8, 0.455);
+                z-index: 0;
 
-}
+            } */
+            .welcoming{
+                position: relative;
+                font-size: 3.3em;
+                color: white;
+                z-index: 1;
+                text-align: center;
+                width: 100%;
+                
+                text-shadow: 1px 2px 4px rgb(10, 10, 10);
+                background: linear-gradient(200deg, rgba(0,0,0,0.76), transparent);
+                
+            }
+            .more{
+               
+               
+                font-size: 2.4em;
+                color: white;
+                z-index: 1;
+                padding-left: 10px;
+                margin-top: 20px;
+                 max-width: 41%;
+                 padding-top: 30px;              
+                text-indent: 45pt;
+                text-align: left;
+                text-shadow: 1px 2px 4px rgb(10, 10, 10);
+                font-weight: 500;
+                /* bottom:50%; */
+                
+            }
+            .tour{
+                font-size: 2em;
+                margin-bottom: 5%;
+                position: static;
+                margin-left: 5%;
+                
+                width:fit-content;
+                height: fit-content;
+                background-image: url("WhatsApp lite.jpeg");
+                background-size: cover;
+                background-position: bottom;
+                background-color: rgb(84, 110, 83);
+                /* background: linear-gradient(200deg,#e97a12,rgb(240, 133, 71)); */
+    
+                padding:7px;
+                border-style: inset;
+                border-width: 4px;
+                border-color: rgb(255, 255, 255);
+                /* border-radius: 29px; */
+            }
+             .tour a{
+                text-decoration: none;
+                color: rgb(170, 169, 169);
+                text-shadow: 2px 2px 3px black;
+                transition: ease 1s;
+            }
+             .tour:active a{
+                background-color: greenyellow;
 
-    </style>
+            }
+             .tour:hover a{
+                transform: scale(1.1);
+            }
+
+            @keyframes animate-in{
+                0%{
+                    transform: translateY(-6rem) translateX(2rem) scale(0.7);
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+
+            .animate-in{
+                animation: animate-in 2s 2s ease-out forwards;
+                opacity: 0;
+            }
+
+            .more{
+                animation-delay:0.9s;
+            }
+            .tour{
+                animation-delay: 1.3s;
+            }
+
+            @media only screen and (max-width: 1100px){
+                .more{
+                    max-width: 60%;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+                body::before{
+                    background-size: cover;
+                    background-position: center;
+                    background:  linear-gradient(to top, rgba(0,0,0,.11),
+                     rgba(0,0,0,.8)), url('porsche.jpg') center;
+
+                    
+                }
+                .welcoming{
+                    font-size: 2.8em;
+                    margin-top: 0px;
+                }
+                .more{
+                    padding: 5px;
+                    margin-top: 0;
+                    position: relative;
+                    width:auto;
+                    top: 0;
+                    font-size: 1.8em;
+                    /* background: #00000059; */
+                    margin: 0;
+                    text-shadow: 2px 2px 8px rgb(0,0,0);
+                    max-width: 100%;
+
+                }
+                body a{
+                    text-decoration: none;
+                }
+                .tour{
+                    position: relative;
+                    font-size: 1.8em;
+                    transition: cubic-bezier(0.64, 0.57, 0.48, 0.95) .6s;
+                }
+               
+             .tour:hover{
+                transform: none;
+            }
+            
+            }
+           
+        </style>
 
     </head>
     <body>
-     <header>
-            <img src="karura cropped.png">
-        <nav>
-            <div class="links">
-                <a href="services.html"><button> Car Services </button></a>
-                <a href="team.html"><button>The Team </button></a>
-                <a href="contact.html"><button> Contact us </button></a>
-            </div>
-
-        </nav>
-
-            </header>
-    <div class="landing">
-        
-        <div class="welcome"><p>Welcome to Karura Garage</p></div>
-        <div class="images">
-            <div class="pic">
-                <a href="services.html"><img src="brakePads1.jpg" alt="brake pads">
-                <div class="img_text">
-                    Equip your car with durable brake pads.
-                </div>
-                </a>
-            </div>
-
-            <div class="pic">
-               <a href="services.html"> <img src="xtrail.jpg" alt="Xtrail car">
-                <div class="img_text">
-                    Get the best driving experience.
-                </div>
-                </a>
-            </div>
-
-            <div class="pic">
-              <a href="team.html">  <img src="car-lifted-up.jpg" alt="spanners">
-                <div class="img_text">
-                    15+ years of loyal service to our customers.
-                </div>
-                </a>
-            </div>
-            
+        <!-- <img src="karura cropped.png" style="width:330px; height:180px; float: left;"> -->
+        <div class="welcoming">
+            Karibu Karura Garage
         </div>
-    </div>
-
+        <div class="more animate-in">
+           Karura Garage is a state of the art garage located at the heart of Nyeri town. Our core goal is to ensure safety and comfort in motion.
+        </div>
+        <div class="tour animate-in"><a href="home.html">
+            Take a tour
+            
+            </a>
+        </div>
     </body>
 </html>

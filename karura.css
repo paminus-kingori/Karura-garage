@@ -2,7 +2,13 @@ body{
     /* background:linear-gradient(rgb(211, 208, 208),rgb(88, 88, 88),rgb(53, 52, 52)); */
     background-color: rgb(190, 190, 192);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100vh;
 }
+
 header{
     display:inline-flex;
     width:100%;
@@ -69,8 +75,8 @@ background-color: tomato;
 } */
 .landing{
     width: 100%! important;
-    height: 70vh;
-    background-image: url("c-v\ joint.jpg");
+    height: 71vh;
+    background: linear-gradient(45deg,black,rgba(0, 0, 0, 0.123)),url("c-v\ joint.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,6 +84,11 @@ background-color: tomato;
     position: relative;
     /* display: inline-table; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* overflow-y: overlay; */
+    bottom: 0;
     
 }
 
@@ -88,22 +99,17 @@ background-color: tomato;
     font-weight: 500;
     font-family: florence,cursive,fantasy;
     text-align: center;
-    /* vertical-align: text-top; */
-    /* display: table-cell; */
-    background-color: #1414157e;
-left: 0;
-right: 0;
-bottom: 0;
-top: 0;
-position: absolute;
-margin: 0;
-z-index: 0;
-}
+    
 
+}
+.welcome p{
+    margin:0;
+}
 .images{
-    display: inline-flex;
-    margin-top: 13%;
-    z-index: 1;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
 }
 .landing .images .pic a img{
     width: 270px;
@@ -143,15 +149,7 @@ text-shadow: 1px 2px 3px black;
 
 
 /* service file */
-.hide{
-    opacity:0;
-    display: none;
-    transition: .6s;
-}
-.show{
-    opacity:1;
-    transition: 0.6s;
-}
+
 
 .container{
     display: grid;
@@ -386,9 +384,18 @@ align-self: flex-end;
 .quote::first-letter{
     margin-left: 60px;
 }
+@media only screen and (max-width:1050px){
+    .pic:first-child{
+        display: none;
+    }
+
+}
 @media only screen and (max-width:550px){
     *{
         font-size: 16px;
+    }
+    .welcome p{
+        font-size: 30px;
     }
     .container{
         display: grid;
@@ -396,6 +403,9 @@ align-self: flex-end;
         justify-items: center;
         align-content: center;
 
+    }
+    .pic:first-child{
+        display: none;
     }
     .container .box{
 height: max-content;
@@ -427,14 +437,33 @@ padding-bottom: 5px;
         margin-left: 5px;
     }
     .links a button:hover{
-    /* animation: hoverAct linear 0.2s 5 forwards; */
     background-color: rgb(81, 160, 197);
     text-transform: none;
-}
+    }
+   
 }
 .main-window{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
+  .showUp{
+      display: block;
+  }
+
+  .up{
+    width: 50px; height:50px; border-radius: 50%;
+    position: fixed; bottom:3%; right:1.2%;
+    opacity: 0;
+    transition: .6s;
+  }
+  .hide{
+    opacity:0;
+    display: none;
+    transition: .6s;
+}
+.show{
+    opacity:1;
+    /* transition: 0.6s; */
+}
