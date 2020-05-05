@@ -440,8 +440,24 @@ padding-bottom: 5px;
     background-color: rgb(81, 160, 197);
     text-transform: none;
     }
+    .booking_text{
+        display: flex;
+        flex-direction: column;
+        padding: 2px 30px;
+
+    }
+    .booking_text select{
+        margin-bottom: 10px;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+    footer{
+        height:max-content
+    }
    
 }
+
 .main-window{
     display: flex;
     justify-content: center;
