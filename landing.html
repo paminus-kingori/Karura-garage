@@ -5,7 +5,7 @@
         <title>
             Karura Garage | Landing page
         </title>
-        <!-- <link rel="stylesheet" href="karura.css"> -->
+        <link rel="stylesheet" href="karura.css">
         <style>
            
             body{
@@ -169,7 +169,9 @@
             }
             
             }
-           
+           .hidden{
+               display: none;
+           }
         </style>
 
     </head>
@@ -186,5 +188,23 @@
             
             </a>
         </div>
+
+        <!-- Loading square for squar.red network -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <script>
+           window.addEventListener("load",function(){
+            const loaderWrapper = document.querySelector(".loader-wrapper");
+            const loader = document.querySelector(".loader");
+            loaderWrapper.className += "hidden";
+            loader.className += "hidden";
+            
+           });
+           
+           </script>
+
+
     </body>
 </html>
